@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC107C02BAB0717001D55DC /* CaptureModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC107BE2BAB0717001D55DC /* CaptureModeCollectionViewCell.swift */; };
+		FAC107C12BAB0717001D55DC /* CaptureModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC107BF2BAB0717001D55DC /* CaptureModeCollectionViewCell.xib */; };
+		FAE81FA62BA9BD9D00D8BE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FA52BA9BD9D00D8BE8F /* AppDelegate.swift */; };
+		FAE81FA82BA9BD9D00D8BE8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FA72BA9BD9D00D8BE8F /* SceneDelegate.swift */; };
+		FAE81FAA2BA9BD9D00D8BE8F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FA92BA9BD9D00D8BE8F /* CameraViewController.swift */; };
+		FAE81FAD2BA9BD9D00D8BE8F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FAE81FAC2BA9BD9D00D8BE8F /* Base */; };
+		FAE81FAF2BA9BD9E00D8BE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE81FAE2BA9BD9E00D8BE8F /* Assets.xcassets */; };
+		FAE81FB22BA9BD9E00D8BE8F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FAE81FB12BA9BD9E00D8BE8F /* Base */; };
+		FAE81FBD2BA9BD9E00D8BE8F /* vxhcamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FBC2BA9BD9E00D8BE8F /* vxhcamTests.swift */; };
+		FAE81FC72BA9BD9E00D8BE8F /* vxhcamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FC62BA9BD9E00D8BE8F /* vxhcamUITests.swift */; };
+		FAE81FC92BA9BD9E00D8BE8F /* vxhcamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FC82BA9BD9E00D8BE8F /* vxhcamUITestsLaunchTests.swift */; };
+		FAE81FD62BA9BE4000D8BE8F /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FD52BA9BE4000D8BE8F /* PhotoCaptureProcessor.swift */; };
+		FAE81FD82BA9BE6700D8BE8F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE81FD72BA9BE6700D8BE8F /* PreviewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE81FB92BA9BD9E00D8BE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE81F9A2BA9BD9D00D8BE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE81FA12BA9BD9D00D8BE8F;
+			remoteInfo = vxhcam;
+		};
+		FAE81FC32BA9BD9E00D8BE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE81F9A2BA9BD9D00D8BE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE81FA12BA9BD9D00D8BE8F;
+			remoteInfo = vxhcam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAC107BE2BAB0717001D55DC /* CaptureModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAC107BF2BAB0717001D55DC /* CaptureModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptureModeCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAE81FA22BA9BD9D00D8BE8F /* vxhcam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vxhcam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE81FA52BA9BD9D00D8BE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAE81FA72BA9BD9D00D8BE8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAE81FA92BA9BD9D00D8BE8F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FAE81FAC2BA9BD9D00D8BE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE81FAE2BA9BD9E00D8BE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAE81FB12BA9BD9E00D8BE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAE81FB32BA9BD9E00D8BE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE81FB82BA9BD9E00D8BE8F /* vxhcamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vxhcamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE81FBC2BA9BD9E00D8BE8F /* vxhcamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vxhcamTests.swift; sourceTree = "<group>"; };
+		FAE81FC22BA9BD9E00D8BE8F /* vxhcamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vxhcamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE81FC62BA9BD9E00D8BE8F /* vxhcamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vxhcamUITests.swift; sourceTree = "<group>"; };
+		FAE81FC82BA9BD9E00D8BE8F /* vxhcamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vxhcamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAE81FD52BA9BE4000D8BE8F /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		FAE81FD72BA9BE6700D8BE8F /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE81F9F2BA9BD9D00D8BE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FB52BA9BD9E00D8BE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FBF2BA9BD9E00D8BE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE81F992BA9BD9D00D8BE8F = {
+			isa = PBXGroup;
+			children = (
+				FAE81FA42BA9BD9D00D8BE8F /* vxhcam */,
+				FAE81FBB2BA9BD9E00D8BE8F /* vxhcamTests */,
+				FAE81FC52BA9BD9E00D8BE8F /* vxhcamUITests */,
+				FAE81FA32BA9BD9D00D8BE8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE81FA32BA9BD9D00D8BE8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE81FA22BA9BD9D00D8BE8F /* vxhcam.app */,
+				FAE81FB82BA9BD9E00D8BE8F /* vxhcamTests.xctest */,
+				FAE81FC22BA9BD9E00D8BE8F /* vxhcamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE81FA42BA9BD9D00D8BE8F /* vxhcam */ = {
+			isa = PBXGroup;
+			children = (
+				FAE81FD72BA9BE6700D8BE8F /* PreviewView.swift */,
+				FAE81FA52BA9BD9D00D8BE8F /* AppDelegate.swift */,
+				FAE81FA72BA9BD9D00D8BE8F /* SceneDelegate.swift */,
+				FAE81FA92BA9BD9D00D8BE8F /* CameraViewController.swift */,
+				FAE81FD52BA9BE4000D8BE8F /* PhotoCaptureProcessor.swift */,
+				FAE81FAB2BA9BD9D00D8BE8F /* Main.storyboard */,
+				FAE81FAE2BA9BD9E00D8BE8F /* Assets.xcassets */,
+				FAE81FB02BA9BD9E00D8BE8F /* LaunchScreen.storyboard */,
+				FAE81FB32BA9BD9E00D8BE8F /* Info.plist */,
+				FAC107BE2BAB0717001D55DC /* CaptureModeCollectionViewCell.swift */,
+				FAC107BF2BAB0717001D55DC /* CaptureModeCollectionViewCell.xib */,
+			);
+			path = vxhcam;
+			sourceTree = "<group>";
+		};
+		FAE81FBB2BA9BD9E00D8BE8F /* vxhcamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE81FBC2BA9BD9E00D8BE8F /* vxhcamTests.swift */,
+			);
+			path = vxhcamTests;
+			sourceTree = "<group>";
+		};
+		FAE81FC52BA9BD9E00D8BE8F /* vxhcamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE81FC62BA9BD9E00D8BE8F /* vxhcamUITests.swift */,
+				FAE81FC82BA9BD9E00D8BE8F /* vxhcamUITestsLaunchTests.swift */,
+			);
+			path = vxhcamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE81FA12BA9BD9D00D8BE8F /* vxhcam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE81FCC2BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcam" */;
+			buildPhases = (
+				FAE81F9E2BA9BD9D00D8BE8F /* Sources */,
+				FAE81F9F2BA9BD9D00D8BE8F /* Frameworks */,
+				FAE81FA02BA9BD9D00D8BE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vxhcam;
+			productName = vxhcam;
+			productReference = FAE81FA22BA9BD9D00D8BE8F /* vxhcam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE81FB72BA9BD9E00D8BE8F /* vxhcamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE81FCF2BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcamTests" */;
+			buildPhases = (
+				FAE81FB42BA9BD9E00D8BE8F /* Sources */,
+				FAE81FB52BA9BD9E00D8BE8F /* Frameworks */,
+				FAE81FB62BA9BD9E00D8BE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE81FBA2BA9BD9E00D8BE8F /* PBXTargetDependency */,
+			);
+			name = vxhcamTests;
+			productName = vxhcamTests;
+			productReference = FAE81FB82BA9BD9E00D8BE8F /* vxhcamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAE81FC12BA9BD9E00D8BE8F /* vxhcamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE81FD22BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcamUITests" */;
+			buildPhases = (
+				FAE81FBE2BA9BD9E00D8BE8F /* Sources */,
+				FAE81FBF2BA9BD9E00D8BE8F /* Frameworks */,
+				FAE81FC02BA9BD9E00D8BE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE81FC42BA9BD9E00D8BE8F /* PBXTargetDependency */,
+			);
+			name = vxhcamUITests;
+			productName = vxhcamUITests;
+			productReference = FAE81FC22BA9BD9E00D8BE8F /* vxhcamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE81F9A2BA9BD9D00D8BE8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FAE81FA12BA9BD9D00D8BE8F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					FAE81FB72BA9BD9E00D8BE8F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FAE81FA12BA9BD9D00D8BE8F;
+					};
+					FAE81FC12BA9BD9E00D8BE8F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FAE81FA12BA9BD9D00D8BE8F;
+					};
+				};
+			};
+			buildConfigurationList = FAE81F9D2BA9BD9D00D8BE8F /* Build configuration list for PBXProject "vxhcam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE81F992BA9BD9D00D8BE8F;
+			productRefGroup = FAE81FA32BA9BD9D00D8BE8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE81FA12BA9BD9D00D8BE8F /* vxhcam */,
+				FAE81FB72BA9BD9E00D8BE8F /* vxhcamTests */,
+				FAE81FC12BA9BD9E00D8BE8F /* vxhcamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE81FA02BA9BD9D00D8BE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE81FAF2BA9BD9E00D8BE8F /* Assets.xcassets in Resources */,
+				FAE81FB22BA9BD9E00D8BE8F /* Base in Resources */,
+				FAC107C12BAB0717001D55DC /* CaptureModeCollectionViewCell.xib in Resources */,
+				FAE81FAD2BA9BD9D00D8BE8F /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FB62BA9BD9E00D8BE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FC02BA9BD9E00D8BE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE81F9E2BA9BD9D00D8BE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC107C02BAB0717001D55DC /* CaptureModeCollectionViewCell.swift in Sources */,
+				FAE81FD82BA9BE6700D8BE8F /* PreviewView.swift in Sources */,
+				FAE81FD62BA9BE4000D8BE8F /* PhotoCaptureProcessor.swift in Sources */,
+				FAE81FAA2BA9BD9D00D8BE8F /* CameraViewController.swift in Sources */,
+				FAE81FA62BA9BD9D00D8BE8F /* AppDelegate.swift in Sources */,
+				FAE81FA82BA9BD9D00D8BE8F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FB42BA9BD9E00D8BE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE81FBD2BA9BD9E00D8BE8F /* vxhcamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE81FBE2BA9BD9E00D8BE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE81FC72BA9BD9E00D8BE8F /* vxhcamUITests.swift in Sources */,
+				FAE81FC92BA9BD9E00D8BE8F /* vxhcamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE81FBA2BA9BD9E00D8BE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE81FA12BA9BD9D00D8BE8F /* vxhcam */;
+			targetProxy = FAE81FB92BA9BD9E00D8BE8F /* PBXContainerItemProxy */;
+		};
+		FAE81FC42BA9BD9E00D8BE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE81FA12BA9BD9D00D8BE8F /* vxhcam */;
+			targetProxy = FAE81FC32BA9BD9E00D8BE8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAE81FAB2BA9BD9D00D8BE8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE81FAC2BA9BD9D00D8BE8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAE81FB02BA9BD9E00D8BE8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE81FB12BA9BD9E00D8BE8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE81FCA2BA9BD9E00D8BE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAE81FCB2BA9BD9E00D8BE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE81FCD2BA9BD9E00D8BE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GBNAHBBP7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vxhcam/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AVCam uses the camera to take photos and video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AVCam uses the microphone to record sound during Live Photos and movies.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "AVCam saves captured photos and videos to your photo library.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kabir.CameraApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAE81FCE2BA9BD9E00D8BE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GBNAHBBP7G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vxhcam/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AVCam uses the camera to take photos and video.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "AVCam uses the microphone to record sound during Live Photos and movies.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "AVCam saves captured photos and videos to your photo library.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kabir.CameraApp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAE81FD02BA9BD9E00D8BE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vxhcam.ios.vxhcamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vxhcam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vxhcam";
+			};
+			name = Debug;
+		};
+		FAE81FD12BA9BD9E00D8BE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vxhcam.ios.vxhcamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vxhcam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vxhcam";
+			};
+			name = Release;
+		};
+		FAE81FD32BA9BD9E00D8BE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vxhcam.ios.vxhcamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vxhcam;
+			};
+			name = Debug;
+		};
+		FAE81FD42BA9BD9E00D8BE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vxhcam.ios.vxhcamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vxhcam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE81F9D2BA9BD9D00D8BE8F /* Build configuration list for PBXProject "vxhcam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE81FCA2BA9BD9E00D8BE8F /* Debug */,
+				FAE81FCB2BA9BD9E00D8BE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE81FCC2BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE81FCD2BA9BD9E00D8BE8F /* Debug */,
+				FAE81FCE2BA9BD9E00D8BE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE81FCF2BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE81FD02BA9BD9E00D8BE8F /* Debug */,
+				FAE81FD12BA9BD9E00D8BE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE81FD22BA9BD9E00D8BE8F /* Build configuration list for PBXNativeTarget "vxhcamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE81FD32BA9BD9E00D8BE8F /* Debug */,
+				FAE81FD42BA9BD9E00D8BE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE81F9A2BA9BD9D00D8BE8F /* Project object */;
+}
